@@ -3,8 +3,8 @@ import axios from "axios";
 // const TUITS_API = "https://tuit-node-app.herokuapp.com/tuits";
 // const USERS_API = "https://tuit-node-app.herokuapp.com/users";
 
-const TUITS_API = "http://localhost:4000/tuits";
-const USERS_API = "http://localhost:4000/users";
+const TUITS_API = "https://tuit-node-app.herokuapp.com/tuits";
+const USERS_API = "https://tuit-node-app.herokuapp.com/users";
 
 const api = axios.create({withCredentials: true});
 
