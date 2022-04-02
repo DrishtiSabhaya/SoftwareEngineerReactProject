@@ -24,3 +24,7 @@ export const userLikesTuit = (uid, tid) =>
 export const userTogglesTuitLikes = (uid, tid) =>
     api.put(`${USERS_API}/${uid}/likes/${tid}`)
         .then(response => response.data);
+
+export const findAllTuitsDisLikedByUser = (userId) =>
+    api.get(`${USERS_API}/${userId}/dislikes`)
+        .then(response => response.data);
